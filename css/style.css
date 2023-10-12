@@ -4,9 +4,13 @@ body, ul {
 }
 
 #menu a {
+    display: block;
+    padding: .5rem;
     color: black;
     text-decoration: none;
-    font-family: sans-serif;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 #menu a:hover {
@@ -25,7 +29,7 @@ body, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #F2B705;
+    background: #F29F05;
     border-top: 1.7rem solid #0D0D0D; 
 }
 
@@ -36,10 +40,6 @@ body, ul {
     gap: .5rem;
 }
 
-#menu a {
-    display: block;
-    padding: .5rem;
-}
 
 #btn-mobile {
     display: none;
@@ -52,7 +52,7 @@ body, ul {
         width: 100%;
         top: 70px;
         right: 0px;
-        background: #e7e7e7;
+        background: #F2B705;
         height: 0px;
         transition: .6s;
         z-index: 1000;
@@ -69,6 +69,8 @@ body, ul {
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
     #btn-mobile {
         display: flex;
@@ -109,5 +111,8 @@ body, ul {
     #nav.active  #hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+    #header {
+        border-top: none;
     }
 }
