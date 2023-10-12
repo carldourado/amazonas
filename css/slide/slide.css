@@ -8,7 +8,6 @@ img {
     margin: 20px auto;
     display: grid;
     position: relative; /* Adicione esta linha para definir a posição relativa */
-    top: -20px;
 }
 .slide-items {
     position: relative;
@@ -81,9 +80,11 @@ img {
 /* Estilos para dispositivos móveis (tamanho de tela menor) */
 @media (max-width: 768px) {
     .slide {
-        /* Estilos específicos para o slide em dispositivos móveis */
-        max-width: 380px; /* Por exemplo, você pode manter os estilos originais aqui */
-    }
+        width: 100vw; /* Define a largura para 100% da largura da tela */
+        height: 100vh; /* Define a altura para 100% da altura da tela */
+        margin: 0; /* Remove margens */
+        padding: 0;} 
+        
 }
 
 /* Estilos para dispositivos PC (tamanho de tela maior) */
@@ -91,4 +92,4 @@ img {
     .slide {
         display: none; /* Isso ocultará o slide em dispositivos PC */
     }
-}
+        }
