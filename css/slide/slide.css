@@ -4,8 +4,10 @@ img {
 }
 
 .slide {
-    max-width: 380px;
-    margin: 20px auto;
+    width: 100vw; /* Define a largura para 100% da largura da tela */
+        height: 100vh; /* Define a altura para 100% da altura da tela */
+        margin: 0; /* Remove margens */
+        padding: 0;
     display: grid;
     position: relative; /* Adicione esta linha para definir a posição relativa */
 }
@@ -79,11 +81,13 @@ img {
 
 /* Estilos para dispositivos móveis (tamanho de tela menor) */
 @media (max-width: 768px) {
+    
     .slide {
         width: 100vw; /* Define a largura para 100% da largura da tela */
         height: 100vh; /* Define a altura para 100% da altura da tela */
         margin: 0; /* Remove margens */
         padding: 0;} 
+    
         
 }
 
