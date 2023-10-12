@@ -80,7 +80,7 @@ img {
 }
 
 /* Estilos para dispositivos móveis (tamanho de tela menor) */
-@media (max-width: 268px) {
+@media (max-width: 768px) {
     
     .slide {
         width: 100vw; /* Define a largura para 100% da largura da tela */

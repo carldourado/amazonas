@@ -45,7 +45,89 @@ body, ul {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 712px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #F2B705;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #logo img {
+        position: absolute;
+        width: 70px;
+        top: -1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active  #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active  #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #header {
+        border-top: none;
+    }
+}
+
+@media (width: 820px) and (height: 1180px) {
+    #logo img {
+        position: absolute;
+        width: 60px;
+        top: -5%;
+        left: 2%;
+        transform: translate(-20%, -5%);
+    }
+}
+
+@media (width: 768px) and (height: 1024px), (width: 912px) and (height: 1368px) {
     #menu {
         display: block;
         position: absolute;
