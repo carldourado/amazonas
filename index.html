@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazonas FC - Teste</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/slide/slide.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
     <header id="header">
         <a id="logo" href="./">
             <img src="./img/logo-amazonas-fc.png" alt="Logo Amazonas Futebol Clube">
@@ -32,6 +33,23 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div data-slide="slide" class="slide">
+            <div class="slide-items">
+              <img src="./img/img1.jpg" alt="Img 1">
+              <img src="./img/img2.jpg" alt="Img 2">
+              <img src="./img/img3.jpg" alt="Img 3">
+              <img src="./img/img4.jpg" alt="Img 4">
+            </div>
+            <nav class="slide-nav">
+              <div class="slide-thumb"></div>
+              <button class="slide-prev">Anterior</button>
+              <button class="slide-next">Próximo</button>
+            </nav>
+          </div>
+    </main>
+    <script src="js/slide-stories.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
