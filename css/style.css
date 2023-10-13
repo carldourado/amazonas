@@ -3,6 +3,16 @@ body, ul {
     padding: 0px;
 }
 
+/*.container {
+    box-sizing: border-box;
+    width: 100%; 
+    padding-right: 0; 
+    padding-left: 0; 
+    margin-right: auto;
+    margin-left: auto;
+}
+*/
+
 #menu a {
     display: block;
     padding: .5rem;
@@ -21,7 +31,10 @@ body, ul {
     width: 150px;
     padding-top: 80px;
 }
-
+#logo {
+   
+    z-index: 1001; /* Certifica-se de que a logo fique acima do carrossel */
+}
 #header {
     box-sizing: border-box;
     height: 70px;
@@ -198,3 +211,8 @@ body, ul {
         border-top: none;
     }
 }
+
+.carousel img {
+    width: 100%; /* A largura das imagens se ajusta ao contêiner */
+    height: auto; /* A altura se ajusta automaticamente à largura */
+  }

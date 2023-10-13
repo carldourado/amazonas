@@ -58,3 +58,24 @@ class SlideStories {
 }
 
 new SlideStories('slide');
+
+// Script - Spectre//
+
+  // Adicione um intervalo de tempo (em milissegundos) para controlar a velocidade de rotação automática
+  const interval = 5000; // 5 segundos
+
+  // Função para avançar automaticamente os slides
+  function autoRotate() {
+    const radios = document.querySelectorAll('.carousel-locator');
+    let checkedRadio = document.querySelector('.carousel-locator:checked');
+
+    if (!checkedRadio) {
+      radios[0].checked = true;
+    } else {
+      const index = Array.from(radios).indexOf(checkedRadio);
+      radios[(index + 1) % radios.length].checked = true;
+    }
+  }
+
+  // Iniciar a rotação automática
+  setInterval(autoRotate, interval);
