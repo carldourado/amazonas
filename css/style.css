@@ -218,3 +218,14 @@ body, ul {
     width: 100%; /* A largura das imagens se ajusta ao contêiner */
     height: auto; /* A altura se ajusta automaticamente à largura */
   }
+
+  /* Adicione este CSS para remover as margens e preenchimentos */
+.swiper-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.swiper-slide {
+    margin: 0;
+    padding: 0;
+}
