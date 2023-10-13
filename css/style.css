@@ -102,9 +102,11 @@ body, ul {
         transform: translate(-50%, -50%);
     }
     #hamburguer {
+        margin-top: 7px;
         border-top: 2px solid;
         width: 20px;
     }
+
     #hamburguer::after, #hamburguer::before {
         content: '';
         display: block;
